@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      input[type="text"] {
+        padding: 0.5em;
+        font-size: 1em;
+      }
+
+      button {
+        padding: 0.5em;
+        font-size: 1em;
+        cursor: pointer;
+      }
+
+      .success {
+        color: green;
+      }
+
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Proxy Checker</h1>
+    <p>Enter a proxy below to check if it is working:</p>
+    <input type="text" id="proxy" placeholder="Enter proxy here" />
+    <button onclick="checkProxy()">Check Proxy</button>
+    <p id="result"></p>
+    <script>
+      function checkProxy() {
+        // Get the proxy entered by the user
+        var proxy = document.getElementById('proxy').value;
+
+        // Send an HTTP request to a website using the proxy
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://www.example.com', true);
+        xhr.proxy = proxy;
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            // Check the response to see if the proxy is working
+            if (xhr.status === 200) {
+              // If the proxy is working, show a success message
+              document.getElementById('result').innerHTML = '<span class="success">Success: The proxy is working!</span>';
+            } else {
+              // If the proxy is not working, show an error message
+              document.getElementById('result').innerHTML = '<span class="error">Error: The proxy is not working!</span>';
+            }
+          }
+        };
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
