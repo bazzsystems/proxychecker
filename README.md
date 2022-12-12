@@ -1,11 +1,11 @@
 
 <h2>About the Script:</h2>
 
-This is a simple HTML code that creates a basic web page with a proxy checker tool. The page includes a <style> section at the top that defines the styling for the page, including font, padding, and colors.
+This is a simple HTML code that creates a basic web page with a proxy checker tool. The page includes a style section at the top that defines the styling for the page, including font, padding, and colors.
 
-The page has a <h1> heading at the top that says "Proxy Checker" and a <p> element that provides instructions to the user. The page also includes an <input> element where the user can enter a proxy, and a <button> element that the user can click to check if the proxy is working.
+The page has a h1 heading at the top that says "Proxy Checker" and a <p> element that provides instructions to the user. The page also includes an input element where the user can enter a proxy, and a button element that the user can click to check if the proxy is working.
 
-The page also includes a <script> element that defines a checkProxy() function. This function is called when the user clicks the "Check Proxy" button. The function gets the value entered by the user in the <input> element, and then sends an HTTP request to the website http://www.example.com using the specified proxy.
+The page also includes a script element that defines a checkProxy() function. This function is called when the user clicks the "Check Proxy" button. The function gets the value entered by the user in the <input> element, and then sends an HTTP request to the website http://www.example.com using the specified proxy.
 
 If the proxy is working, the function displays a success message on the page. If the proxy is not working, the function displays an error message instead.
 
