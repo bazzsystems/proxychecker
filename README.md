@@ -12,7 +12,7 @@ If the proxy is working, the function displays a success message on the page. If
 Overall, this code creates a simple web page that allows the user to check if a proxy is working.
 
 
-![Screenshot](sc.png)
+![Screenshot](sc.jpg)
 
 <h2>How to install?</h2>
 
