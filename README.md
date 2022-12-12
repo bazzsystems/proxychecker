@@ -16,7 +16,7 @@ Overall, this code creates a simple web page that allows the user to check if a 
 
 <h2>How to install?</h2>
 
-<code>pip install -r requirements </code>
+<code>pip install tk</code>
 
 <h2> How to run?</h2>
 <text>Run the main script called <code>proxy checkery.py</code></text>
